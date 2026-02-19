@@ -1,0 +1,40 @@
+{
+  "routes": [
+    {
+      "path": "dashboard",
+      "component": "Dashboard",
+      "layout": "main",
+      "breadcrumbLabel": "Dashboard",
+      "isProtected": true
+    }
+  ],
+  "authRoutes": [
+    {
+      "path": "/",
+      "component": "Login",
+      "layout": "auth"
+    },
+    {
+      "path": "/register",
+      "component": "Register",
+      "layout": "auth"
+    },
+    {
+      "path": "/forgot-password",
+      "component": "ForgotPassword",
+      "layout": "auth"
+    },
+    {
+      "path": "/force-reset-password",
+      "component": "ForceResetPassword",
+      "layout": "auth"
+    }
+  ],
+  "specialRoutes": [
+    {
+      "path": "404",
+      "component": "Error",
+      "layout": "none"
+    }
+  ]
+}
