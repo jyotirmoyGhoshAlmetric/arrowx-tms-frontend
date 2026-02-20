@@ -9,7 +9,7 @@ import {
 } from "react-hook-form";
 import CustomSelectRadix from "./CustomSelectRadix"; // Adjust the import path as needed
 import Icon from "@/components/ui/Icon";
-import { type AvailableIcon, isIconAvailable } from "@/config/icons";
+import { type AvailableIcon, isIconAvailable } from "@/config/icon";
 
 interface Option {
   value: string | number;

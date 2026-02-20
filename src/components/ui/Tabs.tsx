@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Tab as HeadlessTab, TabGroup, TabList } from "@headlessui/react";
 import Icon from "./Icon";
-import { type AvailableIcon, isIconAvailable } from "@/config/icons";
+import { type AvailableIcon, isIconAvailable } from "@/config/icon";
 
 export interface TabItem {
   label: string;

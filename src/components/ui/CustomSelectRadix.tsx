@@ -8,7 +8,7 @@ import {
 } from "react-hook-form";
 import * as SelectPrimitive from "@radix-ui/react-select";
 import { CheckIcon, ChevronDownIcon, XIcon } from "lucide-react";
-import { cn } from "@/utils";
+import { cn } from "@/utils/cn";
 
 interface Option {
   value: string | number;

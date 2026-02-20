@@ -1,0 +1,43 @@
+import * as Yup from "yup";
+
+export const vehicleValidationSchema = Yup.object().shape({
+  vehicleNumber: Yup.string().required("Vehicle number is required"),
+  licenseNumber: Yup.string().nullable(),
+  licenseState: Yup.string().nullable(),
+  vin: Yup.string().nullable(),
+  make: Yup.string().nullable(),
+  model: Yup.string().nullable(),
+  year: Yup.string().nullable(),
+  integrationId: Yup.string().nullable(),
+  notes: Yup.string().nullable(),
+  deactivationDate: Yup.string().when("status", {
+    is: false,
+    then: (s) => s.required("Deactivation date is required"),
+    otherwise: (s) => s.nullable(),
+  }),
+  deactivationReason: Yup.string().nullable(),
+  tankCapacity: Yup.string().nullable(),
+  averageMpg: Yup.string().nullable(),
+  defLevel: Yup.string().nullable(),
+  cameraSerialNumber: Yup.string().when("cameraInstalled", {
+    is: true,
+    then: (s) => s.required("Camera serial number is required"),
+    otherwise: (s) => s.nullable(),
+  }),
+  leaseCompanyVendor: Yup.string().when("isLeased", {
+    is: true,
+    then: (s) => s.required("Lease company vendor is required"),
+    otherwise: (s) => s.nullable(),
+  }),
+  leaseStartDate: Yup.string().nullable(),
+  leaseExpiryDate: Yup.string().nullable(),
+  warrantyExpirationDate: Yup.string().nullable(),
+  warrantyMileage: Yup.string().nullable(),
+  subleaseDriver: Yup.string().nullable(),
+  soldDate: Yup.string().nullable(),
+  soldPrice: Yup.string().nullable(),
+  vendorId: Yup.string().nullable(),
+  classId: Yup.string().nullable(),
+  taxType: Yup.string().nullable(),
+  box1099: Yup.string().nullable(),
+});

@@ -114,7 +114,7 @@ const Modal: React.FC<ModalProps> = ({
                         </button>
                       </div>
                       <div
-                        className={`px-6 py-8 ${scrollContent ? "overflow-y-auto max-h-[400px]" : ""}`}
+                        className={`px-6 py-8 ${scrollContent ? "overflow-y-auto max-h-100" : ""}`}
                       >
                         {children}
                       </div>
@@ -177,7 +177,7 @@ const Modal: React.FC<ModalProps> = ({
                       </button>
                     </div>
                     <div
-                      className={`px-6 py-8 ${scrollContent ? "overflow-y-auto max-h-[400px]" : ""}`}
+                      className={`px-6 py-8 ${scrollContent ? "overflow-y-auto max-h-100" : ""}`}
                     >
                       {children}
                     </div>

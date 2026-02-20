@@ -1,6 +1,6 @@
 import React, { type ReactNode } from "react";
 import Icon from "./Icon";
-import { type AvailableIcon, isIconAvailable } from "@/config/icons";
+import { type AvailableIcon, isIconAvailable } from "@/config/icon";
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   children: ReactNode;

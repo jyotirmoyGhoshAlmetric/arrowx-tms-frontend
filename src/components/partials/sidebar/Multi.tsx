@@ -48,7 +48,7 @@ const LockLink: React.FC<LockLinkProps> = ({ to, item, disabled = false }) => {
           <span className="grow truncate">{multiTitle}</span>
           {badge && (
             <span className="grow-0">
-              <Badge className="bg-slate-900 px-2 py-[3px] font-normal text-xs rounded-full text-slate-100 capitalize">
+              <Badge className="bg-slate-900 px-2 py-0.75 font-normal text-xs rounded-full text-slate-100 capitalize">
                 {badge}
               </Badge>
             </span>
@@ -97,9 +97,9 @@ const Multilevel: React.FC<MultilevelProps> = ({
 
   return (
     <Collapse isOpened={activeMultiMenu === j}>
-      <ul className="space-y-[14px] pl-4">
+      <ul className="space-y-3.5 pl-4">
         {subItem.multi_menu.map((item: MultiMenuItem, i: number) => (
-          <li key={i} className="first:pt-[14px]">
+          <li key={i} className="first:pt-3.5">
             <LockLink to={item.multiLink} item={item} disabled={item.disabled}>
               {item.multiTitle}
             </LockLink>

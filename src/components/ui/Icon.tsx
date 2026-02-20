@@ -22,7 +22,7 @@ const Icon: React.FC<IconProps> = ({
   // Runtime validation for development
   if (!isIconAvailable(icon)) {
     console.error(
-      `Icon "${icon}" is not available. Please add it to the AVAILABLE_ICONS list in src/config/icons.ts`,
+      `Icon "${icon}" is not available. Please add it to the AVAILABLE_ICONS list in src/config/icon.ts`,
     );
     return <span className="text-red-500">❌</span>;
   }
