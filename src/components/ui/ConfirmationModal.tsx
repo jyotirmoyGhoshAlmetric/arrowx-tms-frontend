@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "@/components/ui/Modal";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
-import { type AvailableIcon, isIconAvailable } from "@/config/icons";
+import { type AvailableIcon, isIconAvailable } from "@/config/icon";
 
 interface ConfirmationModalProps {
   isOpen: boolean;

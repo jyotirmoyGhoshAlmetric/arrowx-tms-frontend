@@ -6,7 +6,65 @@
       "layout": "main",
       "breadcrumbLabel": "Dashboard",
       "isProtected": true
+    },
+    {
+      "path": "fleet/drivers",
+      "component": "Drivers",
+      "layout": "main",
+      "breadcrumbLabel": "Drivers",
+      "isProtected": true
+    },
+    {
+      "path": "fleet/vehicles",
+      "component": "Vehicles",
+      "layout": "main",
+      "breadcrumbLabel": "Vehicles",
+      "isProtected": true
+    },
+    {
+      "path": "fleet/trailers",
+      "component": "Trailers",
+      "layout": "main",
+      "breadcrumbLabel": "Trailers",
+      "isProtected": true
+    },
+    {
+      "path": "fleet/carriers",
+      "component": "Carriers",
+      "layout": "main",
+      "breadcrumbLabel": "Carriers",
+      "isProtected": true
+    },
+    {
+      "path": "fleet/driver-teams",
+      "component": "DriverTeams",
+      "layout": "main",
+      "breadcrumbLabel": "Driver Teams",
+      "isProtected": true
+    },
+    {
+      "path": "fleet/fuel-card-report",
+      "component": "FuelCardReport",
+      "layout": "main",
+      "breadcrumbLabel": "Fuel Card Report",
+      "isProtected": true
+    },
+    {
+      "path": "fleet/partner-carriers",
+      "component": "PartnerCarriers",
+      "layout": "main",
+      "breadcrumbLabel": "Partner Carriers",
+      "isProtected": true
+    },
+    {
+      "path": "crm/contacts",
+      "component": "Contacts",
+      "layout": "main",
+      "breadcrumbLabel": "Contacts",
+      "isProtected": true
     }
+
+
   ],
   "authRoutes": [
     {

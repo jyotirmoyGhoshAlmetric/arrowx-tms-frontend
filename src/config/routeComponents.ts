@@ -10,7 +10,18 @@ export const routeComponents = {
 
   // Main app components
   Dashboard: lazy(() => import("../pages/dashboard")),
- 
+
+  // fleet components
+  Drivers: lazy(() => import("../pages/fleet/drivers")),
+  Vehicles: lazy(() => import("../pages/fleet/vehicles")),
+  Trailers: lazy(() => import("../pages/fleet/trailers")),
+  Carriers: lazy(() => import("../pages/fleet/carriers")),
+  DriverTeams: lazy(() => import("../pages/fleet/driver-teams")),
+  FuelCardReport: lazy(() => import("../pages/fleet/fuel-card-report")),
+  PartnerCarriers: lazy(() => import("../pages/fleet/partner-carriers")),
+
+  // CRM components
+  Contacts: lazy(() => import("../pages/crm/contacts")),
 
   // Special
   Error: lazy(() => import("../pages/error/error")),
